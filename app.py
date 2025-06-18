@@ -51,6 +51,7 @@ deck = pdk.Deck(
     layers=[layer],
     initial_view_state=initial_view,
     tooltip={"text": tooltip_text},
+    map_style="mapbox://styles/mapbox/satellite-streets-v11",
 )
 
 st.pydeck_chart(deck)
