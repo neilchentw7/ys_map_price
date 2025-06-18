@@ -32,12 +32,24 @@ layer = pdk.Layer(
     pickable=True,
 )
 
+tooltip_text = (
+    "{name}\n"
+    "8米單價: {price_8m}\n"
+    "7米單價: {price_7m}\n"
+    "6米單價: {price_6m}\n"
+    "5米單價: {price_5m}\n"
+    "4米單價: {price_4m}\n"
+    "3米單價: {price_3m}\n"
+    "2米單價: {price_2m}\n"
+    "1米單價: {price_1m}\n"
+    "坡度: {slope}\n"
+    "可載米數: {capacity}"
+)
+
 deck = pdk.Deck(
     layers=[layer],
     initial_view_state=initial_view,
-    tooltip={
-        "text": "{name}\n單價: {price}\n坡度: {slope}\n可載米數: {capacity}",
-    },
+    tooltip={"text": tooltip_text},
 )
 
 st.pydeck_chart(deck)

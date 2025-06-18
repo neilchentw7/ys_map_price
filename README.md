@@ -14,4 +14,4 @@ pip install streamlit pandas pydeck
 streamlit run app.py
 ```
 
-程式會讀取 `data/locations.csv` 中的資料，並在地圖上以標記方式呈現各地區的單價與其他提示資訊。
+程式會讀取 `data/locations.csv` 中的資料，每筆資料包含 8 米到 1 米的分級單價、坡度、可載運米數，以及該地的經緯度座標，並在地圖上以標記方式呈現。您可以修改此 CSV 以新增或調整地區資訊。
