@@ -43,7 +43,8 @@ tooltip_text = (
     "2米單價: {price_2m}\n"
     "1米單價: {price_1m}\n"
     "坡度: {slope}\n"
-    "可載米數: {capacity}"
+    "可載米數: {capacity}\n"
+    "備註說明: {note}"
 )
 
 deck = pdk.Deck(
